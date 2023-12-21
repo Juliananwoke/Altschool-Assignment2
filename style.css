@@ -3,8 +3,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: Brwn;
+  src: url(Images/Brown\ Bold.ttf);
+}
+
+@font-face {
+  font-family: sofia;
+  src: url(Images/sofiapro-light.otf);
+}
 main {
-  background: rgba(46, 196, 182, 0.04);
+  background: rgb a(46, 196, 182, 0.04);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -13,36 +22,116 @@ main {
 section {
   display: flex;
   width: 80%;
-}
-article {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-article div {
-  width: 100%;
-}
+
 article h1 {
   color: #000b0a;
-  margin-bottom: 20px;
-  /* font-family: Brown; */
+  margin-bottom: 15px;
+  font-family: Brwn;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px; /* 125% */
+  line-height: 50px;
+  /* 125% */
   letter-spacing: -0.8px;
 }
 article p {
   color: #737373;
-  /* font-family: Brown; */
+  font-family: Brwn;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 156.25% */
 }
+
+article img {
+  margin-right: -20px;
+}
+
+article {
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
 form {
   border-radius: 6px;
   background: #fff;
   box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  padding: 20px;
+  width: 100%;
+}
+.name {
+  display: flex;
+  gap: 20px;
+}
+label {
+  display: block;
+  margin-top: 15px;
+  font-family: sofia;
+  color: #011c34;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  margin-bottom: 5px;
+}
+input,
+select {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #f0f0f0;
+  background-color: transparent;
+  padding: 10px;
+}
+.name div {
+  width: 50%;
+}
+button {
+  background-color: #2ec4b6;
+  color: white;
+  border: none;
+  filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.1));
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+footer a {
+  color: #2ec4b6;
+  font-family: sofia;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  text-decoration-line: underline;
+}
+
+footer p {
+  color: #000;
+  font-family: sofia;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 178.571% */
+  text-align: center;
+}
+
+.full {
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon i {
+  position: absolute;
+  color: #a6a6a6;
+  right: 10px;
 }
