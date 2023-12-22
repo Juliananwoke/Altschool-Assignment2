@@ -109,6 +109,10 @@ footer a {
   text-decoration-line: underline;
 }
 
+.small {
+  display: none;
+}
+
 footer p {
   color: #000;
   font-family: sofia;
@@ -134,4 +138,47 @@ footer p {
   position: absolute;
   color: #a6a6a6;
   right: 10px;
+}
+@media (max-width: 600px) {
+  section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: block;
+  }
+
+  main {
+    height: 100%;
+  }
+
+  article {
+    margin-bottom: 30px;
+    /* margin-right: 50px; */
+  }
+  form {
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+    padding: 20px;
+    width: 100%;
+  }
+  .name {
+    display: flex;
+    /* gap: 20px; */
+    flex-direction: column;
+  }
+
+  .name div {
+    width: 100%;
+  }
 }
